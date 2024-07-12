@@ -44,8 +44,11 @@ let nawUser = {
     password
 
 }
-console.log(nawUser);
-USERS.push(nawUser)})
+
+USERS.push(nawUser)
+model.reset()
+PopState("none")
+})
 
 
 
