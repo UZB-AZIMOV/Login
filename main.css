@@ -21,6 +21,7 @@ img{
 button{
     cursor: pointer;
     
+    
 }
 .login{
     width: 350px;
@@ -43,6 +44,9 @@ button{
     font-weight: 500;
     color: black;
     border: none;
+}
+.btn__open:active{
+    transform: scale(.9);
 }
 
 
@@ -113,6 +117,19 @@ input{
 .btn__close:hover{
     background-color: blue;
     color:greenyellow;
-    transform: scale(1.1);
 
+}
+.btn__close:active{
+    transform: scale(.9);
+}
+
+.btn:active{
+    transform: scale(.9);
+}
+.btn__open:active{
+    transform: scale(.9);
+}
+
+.but:active{
+    transform: scale(.9);
 }
