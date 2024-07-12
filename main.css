@@ -20,6 +20,7 @@ img{
 
 button{
     cursor: pointer;
+    
 }
 .login{
     width: 350px;
@@ -34,6 +35,17 @@ button{
     height: 35px;
     margin-bottom: 20px;
 }
+
+.btn__open,
+.btn{
+    background-color:  rgb(0, 255, 255);
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+    border: none;
+}
+
+
 
 
 .popap{
@@ -77,5 +89,30 @@ button{
         opacity: 1;
         transform: translate(-50%, -50%)scale(1);
     }
+
+}
+input{
+    color: darkcyan;
+    font-size: 18px;
+    outline: none;
+    border:1px solid rgba(143, 143, 143, 0.333);
+    padding: 0 10px;
+}
+.but,
+.btn__close{
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 1s;
+    border: none;
+
+}
+
+.but:hover,
+.btn__close:hover{
+    background-color: blue;
+    color:greenyellow;
+    transform: scale(1.1);
 
 }
