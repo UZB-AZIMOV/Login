@@ -9,15 +9,18 @@ const overlay = document.querySelector(".overlay")
 const model = document.querySelector(".model")
 const modelName = document.querySelector(".model__name")
 const modelUsername = document.querySelector(".model__username")
-const model__password = document.querySelector(".model__password")
+const psd = document.querySelector(".model__password")
 const modelPasswordConfirm = document.querySelector(".model__password-confirm")
 
 model.addEventListener("submit", (event)=>{event.preventDefault()
 let name = modelName.value
 let username = modelUsername.value
 let passwordConfirm = modelPasswordConfirm.value
-if(password !== passwordConfirm){
-    return alert ("parol bir xil emas")
+if(psd !== passwordConfirm){
+    modelPassword.style.border = "1px solid red"
+    modelPasswordConfirm.style.border = "1px solid red"
+
+    return
 }
 
 let nawUser = {

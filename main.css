@@ -85,7 +85,7 @@ button{
     background-color: #fff;
     box-shadow: 0 0 25px #0005;
     opacity: 0;
-    animation: model .5s ease 0s forwards;
+    animation: model 1s ease 0s forwards;
 }
 
 @keyframes model {
@@ -96,8 +96,9 @@ button{
 
 }
 input{
-    color: darkcyan;
-    font-size: 18px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
     outline: none;
     border:1px solid rgba(143, 143, 143, 0.333);
     padding: 0 10px;
