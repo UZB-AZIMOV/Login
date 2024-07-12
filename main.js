@@ -17,10 +17,20 @@ let name = modelName.value
 let username = modelUsername.value
 let passwordConfirm = modelPasswordConfirm.value
 if(psd !== passwordConfirm){
-    modelPassword.style.border = "1px solid red"
-    modelPasswordConfirm.style.border = "1px solid red"
+    psd.style.border = "2px solid red"
+    modelPasswordConfirm.style.border = "2px solid red"
 
-    return
+    return  alert ("parol bir xil emas")
+}
+psd.style.border = "2px solid #ddd"
+    modelPasswordConfirm.style.border = "2px solid #ddd"
+
+let existUser = USERS.findIndex( user =>urer.username === username)
+i(fexistUser>=0){
+    username.style.border = "2px solid #ddd"
+    return alert ("bu username band")
+}
+
 }
 
 let nawUser = {
@@ -30,8 +40,8 @@ let nawUser = {
     password
 
 }
-console.log(nawUser)
-})
+console.log(nawUser);
+USERS.push(nawUser)})
 
 
 
