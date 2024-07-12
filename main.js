@@ -1,4 +1,4 @@
-alert ("ASSALOMU ALEKKUM")
+alert ("ASSALOMU ALEKUM")
 import { USERS } from "../db/server.js"
 const btnOpen = document.querySelector(".btn__open")
 const btnClose = document.querySelector(".btn__close")
