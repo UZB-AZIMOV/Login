@@ -15,6 +15,7 @@ const modelPasswordConfirm = document.querySelector(".model__password-confirm")
 model.addEventListener("submit", (event)=>{event.preventDefault()
 let name = modelName.value
 let username = modelUsername.value
+let psd = modelPassword.value
 let passwordConfirm = modelPasswordConfirm.value
 if(psd !== passwordConfirm){
     psd.style.border = "2px solid red"
