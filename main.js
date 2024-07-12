@@ -28,7 +28,7 @@ modelPasswordConfirm.style
 
 
 
-let existUser = USERS.findIndex( user =>urer.username === username)
+let existUser = USERS.findIndex(user => user.username === username)
 if(existUser>=0){
     username.style.border = "2px solid #ddd"
     return alert ("bu username band")
