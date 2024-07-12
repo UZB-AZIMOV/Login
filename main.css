@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1248px;
+    width: 100%;
+    padding: 0 18px;
+    margin: 0 auto;
+}
+
+button{
+    cursor: pointer;
+}
+.login{
+    width: 350px;
+    margin: 50px auto;
+}
+
+.login input,
+.login button,
+.model input,
+.model button{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+
+.popap{
+    display: none;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    background: #fff9;
+    z-index: 100;
+    opacity: 0;
+    animation: overlay .5s ease 0s forwards;
+}
+
+@keyframes overlay{
+    to{
+        opacity: 1;
+    }
+}
+
+.model{
+    position: fixed;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%)scale(.8);
+    width: 350px; 
+    min-height: 400px;
+    z-index: 102;
+    background-color: #fff;
+    box-shadow: 0 0 25px #0005;
+    opacity: 0;
+    animation: model .5s ease 0s forwards;
+}
+
+@keyframes model {
+    to{
+        opacity: 1;
+        transform: translate(-50%, -50%)scale(1);
+    }
+
+}

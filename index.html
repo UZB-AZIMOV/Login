@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
     <title>Login</title>
 </head>
 <body>
-    <h1>hellow world</h1>
+
+<form class="login" action="">
+    <input required type="password" class="login__password" placeholder="password">
+    <input required type="password" class="login__password-confirm" placeholder="password">
+    <button type="submit">Login</button>
+    <button class="btn__open" type="button">Register</button>
+</form>
+
+
+
+
+<div class="popap">
+    <div class="overlay"></div>
+    <form class="model" action="">
+        <input required type="text" class="model__name" placeholder="name">
+        <input required type="text" class="model__username" placeholder="username">
+        <input required type="password" class="model__password" placeholder="password">
+        <input required type="password" class="model__password-confirm" placeholder="password">
+     <button type="submit">Register</button>
+     <button type="button" class="btn__close">Cancel</button>
+    </form>
+</div>
+
+<script type="module" src="./main.js"></script>
 </body>
 </html>
