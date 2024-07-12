@@ -134,3 +134,18 @@ input{
 .but:active{
     transform: scale(.9);
 }
+
+.box{
+    display: flex;
+}
+
+.eye{
+    width: 30px;
+    border: none;
+    padding: 0;
+    background-color: white;
+}
+
+.cds{
+    border: none;
+}
